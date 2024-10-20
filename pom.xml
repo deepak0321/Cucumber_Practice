@@ -37,6 +37,17 @@
             <artifactId>cucumber-junit</artifactId>
             <version>7.18.1</version>
         </dependency>
+        <dependency>
+            <groupId>tech.grasshopper</groupId>
+            <artifactId>extentreports-cucumber7-adapter</artifactId>
+            <version>1.10.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>5.1.1</version> <!-- or the version you want -->
+        </dependency>
 
     </dependencies>
 
