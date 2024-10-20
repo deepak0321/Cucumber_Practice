@@ -10,7 +10,7 @@ Feature: Verify Candidate functionalities
       When user clicks on Recruitment
       And  user clicks on add button
       And  user inputs FirstName "Deepak" and LastName "Raj"
-      And  user selects JAA vacancy
+      And  user selects vacancy
       And  user inputs Email "deepak123@gmail.com"
       Then user uploads doc resume file "C:\Users\ADMIN\Downloads\SampleResume.docx"
       Then user clicks on save

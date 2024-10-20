@@ -50,7 +50,7 @@ public class AdminPage extends BasePage {
 
     public void selectRoleESS(){ EssRole.click();}
 
-    public void SelectEmployeeName(String name) throws InterruptedException { EmployeeNames.sendKeys(name); Thread.sleep(3000);  WebElement employee = wait.until(ExpectedConditions.visibilityOf(selectEmployee)); employee.click();}
+    public void SelectEmployeeName(String name) throws InterruptedException { EmployeeNames.sendKeys(name); Thread.sleep(2000); WebElement employee = wait.until(ExpectedConditions.visibilityOf(selectEmployee)); employee.click();}
 
     public void clickOnStatus(){ status.click();}
 

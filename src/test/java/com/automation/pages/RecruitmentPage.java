@@ -21,7 +21,7 @@ public class RecruitmentPage extends BasePage{
     @FindBy(xpath = "//div[@class='oxd-select-text oxd-select-text--active']")
     WebElement vacancies;
 
-    @FindBy(xpath = "(//div[@class='oxd-select-option'])[3]")
+    @FindBy(xpath = "(//div[@class='oxd-select-option'])[2]")
     WebElement selectVacancy;
 
     @FindBy(xpath = "(//label[normalize-space(text())='Email']/following::input)[1]")
@@ -45,7 +45,7 @@ public class RecruitmentPage extends BasePage{
 
     public void enterName(String fname,String lname){ firstNameInput.sendKeys(fname);lastNameInput.sendKeys(lname);}
 
-    public void selectVacancyJAA(){ vacancies.click();selectVacancy.click();}
+    public void SelectVacancy(){ vacancies.click();selectVacancy.click();}
 
     public void enterEmail(String email){ emailInput.sendKeys(email);}
 

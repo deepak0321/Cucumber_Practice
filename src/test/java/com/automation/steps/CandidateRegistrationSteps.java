@@ -26,9 +26,9 @@ public class CandidateRegistrationSteps {
         recruitmentPage.enterName(fname,lname);
     }
 
-    @When("user selects JAA vacancy")
+    @When("user selects vacancy")
     public void user_selects_jaa_vacancy() {
-        recruitmentPage.selectVacancyJAA();
+        recruitmentPage.SelectVacancy();
     }
 
     @When("user inputs Email {string}")

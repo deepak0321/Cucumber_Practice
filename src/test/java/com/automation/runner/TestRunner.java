@@ -9,10 +9,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com.automation.steps",
         plugin = {
-                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-                "rerun:target/failed_scenarios.txt"
-        }
+                "pretty",
+                "html:target/cucumber-reports/cucumber.html",
+                "json:target/cucumber-reports/cucumber.json"
+        },
+        monochrome = true
 )
 public class TestRunner {
 }
