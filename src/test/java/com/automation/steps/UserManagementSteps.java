@@ -54,9 +54,9 @@ public class UserManagementSteps {
     }
 
     @Then("Verify the success message is displayed")
-    public void verify_the_success_message_is_displayed() throws InterruptedException {
+    public void verify_the_success_message_is_displayed()  {
        Assert.assertTrue(adminPage.isSuccessMsgDisplayed());
-       Thread.sleep(10000);
+
     }
 
     @Then("search new user with username {string}")

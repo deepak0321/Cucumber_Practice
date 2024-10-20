@@ -12,11 +12,11 @@ Feature: Verify User Management functionalities
       Then user selects ESS Role
       Then user selects employee name "D"
       And  user selects status Enable
-      And  user inputs username "DeepakRaj"
+      And  user inputs username "LeoDas"
       And  user inputs password and confirm password "Deepak@123"
       And  user clicks on save button
       Then Verify the success message is displayed
-      Then search new user with username "DeepakRaj"
+      Then search new user with username "LeoDas"
       Then search new user with role ESS
       Then search new user with employee name "D"
       Then search new user with status enable

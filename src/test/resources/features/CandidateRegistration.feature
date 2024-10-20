@@ -18,4 +18,4 @@ Feature: Verify Candidate functionalities
       And  user search using name "Deepak"
       Then user click on search
       Then verify candidate record is displayed
-   
+

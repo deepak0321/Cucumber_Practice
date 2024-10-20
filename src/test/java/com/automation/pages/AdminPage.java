@@ -50,7 +50,7 @@ public class AdminPage extends BasePage {
 
     public void selectRoleESS(){ EssRole.click();}
 
-    public void SelectEmployeeName(String name) throws InterruptedException { EmployeeNames.sendKeys(name); Thread.sleep(5000);  WebElement employee = wait.until(ExpectedConditions.visibilityOf(selectEmployee)); employee.click();}
+    public void SelectEmployeeName(String name) throws InterruptedException { EmployeeNames.sendKeys(name); Thread.sleep(3000);  WebElement employee = wait.until(ExpectedConditions.visibilityOf(selectEmployee)); employee.click();}
 
     public void clickOnStatus(){ status.click();}
 
@@ -65,6 +65,9 @@ public class AdminPage extends BasePage {
     public boolean isSuccessMsgDisplayed(){ WebElement SuccessMsg = wait.until(ExpectedConditions.visibilityOf(successMsg));return SuccessMsg.isDisplayed();}
 
 // ---------------------------------------------------------------------------------
+
+    @FindBy(xpath = "//h5[text()='System Users']")
+    WebElement searchDiv;
 
     @FindBy(xpath = "(//input[@class='oxd-input oxd-input--active'])[2]")
     WebElement searchNameInput;
@@ -94,7 +97,7 @@ public class AdminPage extends BasePage {
     WebElement searchResult;
 
 
-    public void EnterSearchNameInput(String name){ searchNameInput.sendKeys(name);}
+    public void EnterSearchNameInput(String name){ wait.until(ExpectedConditions.visibilityOf(searchDiv));searchNameInput.sendKeys(name);}
 
     public void clickOnSearchRoles(){ searchRoles.click();}
 
