@@ -9,7 +9,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com.automation.steps",
         plugin = {
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "pretty",
+                "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "json:target/cucumber-reports/cucumber.json"
+
         },
         monochrome = true
 )
